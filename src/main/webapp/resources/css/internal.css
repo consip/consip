@@ -1,0 +1,413 @@
+.Page .LeftInternal
+{
+	float:left;
+	width: 161px;
+	min-height: 528px;
+	padding: 21px 12px 0 12px;
+}
+
+.Page .ContentInternal
+{
+	float:left;
+	width: 484px;
+	min-height: 528px;
+	padding: 21px 40px 0 12px;
+	font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+	/*border-bottom: 1px solid #6cabd0;*/
+}
+
+.Page .RightInternal
+{
+	float:left;
+	width: 255px;
+	min-height: 528px;
+	padding: 21px 0 0 0;
+	font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+}
+
+.Breadcrumbs
+{
+	float: left;
+	width: 100%;
+	font-size: 11px;
+	padding: 6px 2px;
+}
+.Breadcrumbs .SecondLevel
+{
+	visibility: hidden;
+}
+
+.ReportNav
+{
+	float: left;
+	width: 100%;
+	height: 23px;
+	line-height: 23px;
+	font-size: 12px;	
+	font-weight: bold;
+	border-top: 1px solid #cde3ef;
+	border-bottom: 1px solid #cde3ef;
+}
+
+.ReportNav .ReportListHead
+{
+	float: left;
+	padding: 0 4px 0 16px;
+}
+
+.ReportNav .OrderButton
+{
+	float: left;
+	width: 12px;
+	height: 18px;
+	padding: 4px;
+}
+.ReportNav .OrderButton img
+{
+	float: left;
+	padding: 2px;
+	cursor: pointer;
+}
+
+.ReportNav .NavPages
+{
+	float: right;
+	width: auto;
+}
+
+.Page .ContentInternal .ReportList
+{
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding:  0;
+	border-bottom: 1px solid #6cabd0;
+}
+
+.Page .ContentInternal .ReportList li,
+.PopupWrapper .PopupBox .ReportList li
+{
+	padding: 0;
+	min-height: 24px;
+	width: 100%;
+	float: left;
+}
+
+.Page .ContentInternal .ReportList li .ReportListItemTitle
+{
+	float: left;
+	padding: 6px 0 6px 10px;
+	width: 474px;
+	height: 12px;
+}
+
+.Page .ContentInternal .ReportList .ListDivider
+{
+	height: 8px;
+	padding: 0;
+}
+
+.Page .ContentInternal .ReportList .ReportToggable
+{
+	background: white;
+	padding: 0 0 24px 26px;
+	width: 458px;
+	border-bottom: 1px solid #cde3ef;
+	position: relative;
+}
+
+.Page .ContentInternal .ReportList .ReportToggable .SideInfo
+{
+	float: right;
+	width: 30%;
+}
+.Page .ContentInternal .ReportList .ReportToggable .SideInfo .Footnote
+{
+	margin-top: 6px;
+	float: right;
+	text-align: right;
+}
+.Page .ContentInternal .ReportList .ReportToggable .SideInfo .ReportRel
+{
+	float: right;
+	text-align: right;
+	width: 100%;
+	height: auto;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.Page .ContentInternal .ReportList .ReportToggable .SideInfo .ReportRel .ReportRelImg
+{
+	padding-left: 6px;
+	cursor: pointer;
+}
+
+.Page .ContentInternal .ReportList .ReportDescription
+{
+	width: 70%;
+}
+
+.Page .ContentInternal .ReportList .Line span
+{
+	width: 100%;
+}
+
+.ButtonArea
+{
+	float: left;
+	padding: 10px 0 0 10px;
+	width: 474px;
+}
+
+.ButtonArea .Create
+{
+	float: left;
+	font-size: 12px;
+	padding-left: 16px;
+	background: url(../img/crea-report_mouseoff.png) 0 1px no-repeat transparent;
+}
+
+.ButtonArea .Create:hover
+{
+	background: url(../img/crea-report_mouseover.png) 0 1px no-repeat transparent;
+}
+
+.ButtonArea .Back
+{
+	display: none;
+	float: right;
+	text-align: right;
+	font-size: 12px;
+}
+
+.Page .RightInternal .Highlights
+{
+	float: left;
+	width: 231px;
+	border-bottom: 1px solid #6cabd0;
+	padding: 0 12px 12px 12px;
+	background: #f0f7fb url(../img/sfondo-testata-in-evidenza_flat.png) 0 0 no-repeat;
+}
+
+.Page .RightInternal .Highlights h3
+{
+	font-size: 16px;
+	margin: 0;
+	padding: 10px 0;
+}
+
+.Page .RightInternal .Highlights h2
+{
+	float: left;
+	width: 80%;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0;
+}
+
+.Page .RightInternal .Highlights .TextArea
+{
+	font-size: 12px;
+	float: left;
+	width: 100%;
+	margin: 8px 0;
+}
+
+.Page .RightInternal .Highlights .ContentImage
+{
+	float: left;
+	border: 1px solid #6cabd0;
+	width: 100%;
+	margin: 2px 0 10px 0;
+}
+
+.Page .RightInternal .News
+{
+	border: none;
+}
+
+.Page .RightInternal .News .NewsTitle
+{
+	padding: 14px 0 2px 12px;
+}
+
+.Page .RightInternal .News .NewsMenu
+{
+	padding: 14px 0 2px 0;
+}
+
+.Page .RightInternal .News .NewsBox
+{
+	border-top: 1px solid rgba(108, 171, 208, 0.5);
+	padding: 4px 12px;
+}
+
+/* BOX MENU FILTRO */
+.MenuLinks
+{
+	float: left;
+	width: 100%;
+}
+
+.MenuLinks h2
+{
+	float: left;
+	width: 100%;
+	font-size: 21px;
+	font-weight: bold;
+	font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+	margin: 0 0 25px 0;
+}
+
+.MenuLinks h3
+{
+	float: left;
+	width: 100%;
+	height: 24px;
+	line-height: 24px;
+	font-size: 12px;
+	font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+	margin: 0px;
+}
+.MenuLinks h3 span
+{
+	font-weight: bold;
+}
+
+.MenuLinks ul li, 
+.MenuLinks ul
+{
+	float: left;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.MenuLinks ul li a
+{
+	float: left;
+	width: 100%;
+	height: 24px;
+	line-height: 24px;
+	font-size: 12px;
+	font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+	margin: 0px;
+	color: #062551;
+	font-weight: bold;
+}
+
+.MenuLinks ul li ul.Submenu
+{
+	border-top: 1px solid  #6cabd0;
+	border-bottom: 1px solid  #6cabd0;
+	display: none;
+}
+
+.MenuLinks ul li ul.Submenu li a 
+{
+	line-height: 21px;
+	font-size: 12px;
+	color: #062551;
+	font-weight: normal;
+}
+
+.MenuLinks ul li ul.Submenu li a span span
+{
+	line-height: 21px;
+	padding-left: 3px;
+}
+
+.MenuLinks ul li a .Sel
+{
+	padding: 0 0 0 3px;
+	visibility: hidden;
+	position: relative;
+	top: 1px;
+}
+
+.MenuLinks ul li a span span
+{
+	font-size: 10px;
+}
+
+.MenuLinks ul li a:hover,
+.MenuLinks ul li.active a
+{
+	color: #ff5f00;
+}
+
+.MenuLinks ul li a:hover .Sel,
+.MenuLinks ul li.active a .Sel
+{
+	visibility: visible;
+}
+
+.MenuLinks ul li ul.Submenu li a:hover
+{
+	font-weight: bold;
+}
+.MenuLinks ul li ul.Submenu li.active a
+{
+	color: #ff5f00;
+}
+
+/* BOX FILTRO TRASVERSALE */
+.FilterTransBox
+{
+	float: left;
+	width: 149px;
+	padding: 10px 12px 12px;
+	position: relative;
+	margin: 12px 0 0 -12px;
+	background: #fff2e6 url(../img/sfondo-testata-filtri_flat.png) 0 0 no-repeat;
+}
+
+.FilterTransBox h4
+{
+	float: left;
+	width: 100%;
+	line-height: 20px;
+	font-size: 11px;
+	margin: 0px;
+	font-family: Georgia;
+	font-weight: normal;
+	padding-bottom: 6px;
+}
+
+.FilterTransBox form,
+.FilterTransBox ul,
+.FilterTransBox li
+{
+	float: left;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.FilterTransBox li label
+{
+	line-height: 18px;
+	font-size: 12px;
+	font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	padding-left: 6px;
+}
+
+.FilterTransBox li #filter
+{
+	margin: 12px 0 0 6px;
+}
+
+/* LINK BACK */
+.LinkBack
+{
+	float: left;
+	width: 100%;
+	line-height: 15px;
+	font-size: 12px;
+	font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+	padding-top: 12px;
+}
+
+

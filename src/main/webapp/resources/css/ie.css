@@ -1,0 +1,9 @@
+.rc
+{
+	behavior: url('PIE.htc');
+}
+
+#simplemodal-container
+{	
+	behavior: url('PIE.htc');
+}

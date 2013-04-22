@@ -1,0 +1,2322 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    /*background: #b3d4fc;*/
+    text-shadow: none;
+}
+
+::selection {
+    /*background: #b3d4fc;*/
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+    
+	/************************************************************************/
+	/*** rounded button ***/
+	/************************************************************************/
+   .rc
+	{
+		-moz-border-radius: 4px; /* Firefox */
+		-webkit-border-radius: 4px; /* Safari, Chrome */
+		border-radius: 4px; /* CSS3 */
+	}
+	
+	.btn
+	{
+		background: #ff5f00;
+		border: 1px solid #999999;
+	}
+	
+	.btn span
+	{
+		height: 20px;
+		padding: 3px 7px;
+		text-align: center;
+		font-size: 12px;
+		font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+		color: white;
+	}
+	
+	/* remove dotted outline on focused elements */
+	a:active, a:focus, input[type="image"] {
+		outline: 0;
+	}
+
+
+	
+	/************************************************************************/
+	/*** Icons ***/
+	/************************************************************************/
+
+.Favourite
+{
+	background: url(../img/menu-report-preferiti_mouseoff.png) 0 0 no-repeat transparent;
+	padding-left: 14px;
+	float: left;
+}
+.Favourite:hover
+{
+	background: url(../img/menu-report-preferiti_mouseover.png) 0 0 no-repeat transparent;
+}
+
+.FavouriteOn
+{
+	background: url(../img/salva-preferito_bianco_dopo-click.png) 0 0 no-repeat transparent;
+	padding-left: 14px;
+	float: left;
+}
+.FavouriteOn:hover
+{
+	background: url(../img/salva-preferito_bianco_mouseover.png) 0 0 no-repeat transparent;
+}
+
+.FavouriteOnSel
+{
+	background: url(../img/salva-preferito_azzurro_dopo-click.png) 0 0 no-repeat transparent;
+	padding-left: 14px;
+	float: left;
+}
+.FavouriteOnSel:hover
+{
+	background: url(../img/salva-preferito_azzurro_mouseover.png) 0 0 no-repeat transparent;
+}
+
+.SendMail
+{
+	background: url(../img/invia-per-mail_mouseoff.png) 0 4px no-repeat transparent;
+	padding-left: 12px;
+	float: left;
+}
+.SendMail:hover
+{
+	background: url(../img/invia-per-mail_mouseover.png) 0 4px no-repeat transparent;
+}
+
+.Toggle
+{
+	background: url(../img/dettagli-report_mouseoff.png) 0 1px no-repeat transparent;
+	padding-left: 12px;
+	float: left;
+}
+.Toggle:hover
+{
+	background: url(../img/dettagli-report_mouseover.png) 0 1px no-repeat transparent;
+}
+
+.ToggleOn
+{
+	background: url(../img/dettagli-report_dopo-click.png) 0 4px no-repeat transparent;
+	padding-left: 12px;
+	float: left;
+}
+
+.Edit
+{
+	background: url(../img/edit-report_mouseoff.png) 0 1px no-repeat transparent;
+	padding-left: 12px;
+	float: left;
+}
+.Edit:hover
+{
+	background: url(../img/edit-report_mouseover.png) 0 1px no-repeat transparent;
+}
+
+.CloseButton
+{
+	background: url(../img/close-popup.png) 12px 2px no-repeat transparent;
+	float: right;
+	padding-left: 16px;
+}
+
+	/************************************************************************/
+	/*** Icons containers ***/
+	/************************************************************************/
+
+.SideMenuOne
+{
+	float: right;
+	width: 30px;
+}
+
+.SideMenuTwo
+{
+	float: right;
+	width: 36px;
+}
+
+.SideMenuThree
+{
+	float: right;
+	width: 55px;
+}
+
+.SideMenuFour
+{
+	float: right;
+	width: 66px;
+}
+
+	/************************************************************************/
+	/*** Classes for list elements ***/
+	/************************************************************************/
+
+.Date
+{
+	float: left;
+	font-size: 10px;
+	color: #aaaaaa;
+	width: 50px;
+	text-align: right;
+}
+
+.Sender
+{
+	float: left;
+	font-size: 10px;
+	color: #666666;
+	width: 100px;
+	text-align: left;
+}
+
+.Doc
+{
+	float: left;
+	overflow: hidden;
+	font-size: 12px;
+	font-weight: bold;
+	color: #062551;
+	background: url(../img/report-prompt_mouseoff.png) 0 0 no-repeat transparent;
+	padding-left: 16px;
+}
+
+.PopupDoc
+{
+	float: left;
+	overflow: hidden;
+	font-size: 12px;
+	font-weight: bold;
+	color: #062551;
+}
+
+.Pdf
+{
+	float: left;
+	overflow: hidden;
+	font-size: 12px;
+	font-weight: bold;
+	color: #062551;
+	background: url(../img/report-pdf_mouseoff.png) 0 0 no-repeat transparent;
+	padding-left: 16px;
+}
+
+.App
+{
+	float: left;
+	overflow: hidden;
+	font-size: 12px;
+	font-weight: bold;
+	color: #062551;
+}
+	
+.AutoHeight
+{
+	height: auto !important;
+}
+
+.Bold
+{
+	font-weight: bold;
+}
+
+.Notif
+{
+	float: left;
+	overflow: hidden;
+	font-size: 12px;
+	font-weight: bold;
+	color: #062551;
+}
+
+	/************************************************************************/
+	/*** Font colors ***/
+	/************************************************************************/
+	.fB1
+	{
+		color: #0a4b80;
+	}
+	
+	.fB2
+	{
+		color: #062551;
+	}
+	
+	.fG1
+	{
+		color: #666666;
+	}
+	
+	.fG2
+	{
+		color: #aaaaaa; 
+	}
+	
+	.fA1
+	{
+		color: #00a2de;
+	}
+	
+	.fA2
+	{
+		color: #6cabd0; 
+	}
+	
+	.fAr1
+	{
+		color: #ff5f00;
+	}
+	
+	/************************************************************************/
+	/*** Background colors ***/
+	/************************************************************************/
+	.bgB1
+	{
+		background: #0a4b80;
+	}
+	
+	.bgB2
+	{
+		background: #062551;
+	}
+	
+	.bgA2
+	{
+		background: #6cabd0;
+	}
+	
+	.bgA3
+	{
+		background: #f0f7fb;
+	}
+	
+	.bgA4
+	{
+		background: #c0dceb;
+	}
+	
+	.bgA5
+	{
+		background: rgba(240, 247, 251, 0.5);
+	}
+	
+	.bgAr3
+	{
+		background: #ffd6ab;
+	}
+	
+	.bgAr4
+	{
+		background: #fff2e6;
+	}
+	
+	.bgAr5
+	{
+		background: rgba(255, 214, 171, 0.5);
+	}
+	
+	/************************************************************************/
+	/*** general override ***/
+	/************************************************************************/
+	
+	a
+	{
+		text-decoration: none;
+	}
+	
+	p
+	{	
+		margin: 0;
+		padding: 0;
+	}
+
+
+	/************************************************************************/
+	/*** Page ***/
+	/************************************************************************/
+	
+	.PageWrap
+	{
+		margin: 0px auto;
+		width: 976px;
+		position: relative;
+		z-index: 20;
+	}
+
+	/************************************************************************/
+	/*** Header ***/
+	/************************************************************************/
+	
+	header
+	{
+		float: left;
+		width: 100%;
+		height: 150px;
+		overflow: hidden;
+		background: white;
+	}
+	
+	#headerBox
+	{
+		padding-right: 0px;
+		padding-left: 0px;
+		float: left;
+		padding-bottom: 0px;
+		overflow: hidden;
+		width: 100%;
+		padding-top: 25px;
+		height: 65px;
+		
+	}
+
+	#title1
+	{
+		padding-right: 20px;
+		padding-left: 20px;
+		float: left;
+		padding-bottom: 10px;
+		padding-top: 10px
+	}
+
+	#title2
+	{
+		font-size: 14px;
+		float: right;
+		font-style: italic;
+		
+	}
+
+		
+	#titleBox
+	{
+		display: inline;
+		font-size: 24px;
+		float: left;
+		margin: 0px 0px 0px 10px;
+		color: #1f497d;
+		line-height: 0.9;
+		font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;		
+		height: 100%;
+	}
+
+	#titleBox a
+	{
+		font-size: 24px;
+		color: #1f497d;
+		font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+	}
+	
+	/*** Login area ***/
+
+	#login
+	{
+		font-size: 11px;
+		float: right;
+		overflow: hidden;
+		height: 51px;
+		width: 243px;
+		padding: 14px 0 0;
+	}
+	#login .UserName
+	{
+		float: left;
+		font-style: italic;
+		padding-left: 16px;
+		background: url('../img/utente-loggato_mouseoff.png') 0 2px no-repeat transparent;
+	}
+	
+	#login .LoginMenu
+	{
+		float: right;
+		width: 133px;
+	}
+	#login .LoginMenu a:link,
+	#login .LoginMenu a:visited
+	{
+		color: #aaaaaa;
+	}
+	#login .LoginMenu a:hover,
+	#login .LoginMenu a:active
+	{
+		color: #00a2de;
+	}
+	#login .LoginMenu #support
+	{
+		padding-left: 16px;
+	}
+	#login .LoginMenu #support:link,
+	#login .LoginMenu #support:visited
+	{
+		background: url('../img/supporto_mouseoff.png') 0 0 no-repeat transparent;
+	}
+	#login .LoginMenu #support:hover,
+	#login .LoginMenu #support:active
+	{
+		background: url('../img/supporto_mouseover.png') 0 0 no-repeat transparent;
+	}
+	#login .LoginMenu #settings
+	{
+		padding-left: 16px;
+	}
+	#login .LoginMenu #settings:link,
+	#login .LoginMenu #settings:visited
+	{
+		background: url('../img/impostazioni_mouseoff.png') 0 0 no-repeat transparent;
+	}
+	#login .LoginMenu #settings:hover,
+	#login .LoginMenu #settings:active
+	{
+		background: url('../img/impostazioni_mouseover.png') 0 0 no-repeat transparent;
+	}
+
+	/*** NAV ***/
+	header nav, header nav ul, 
+	header nav ul li
+	{
+		float: left;
+		margin: 0px;
+		padding: -90px;
+		font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+	}
+	
+	/*** General Menu ***/
+	
+	.GeneralMenuPanel
+	{
+		display: none;
+		position: absolute;
+		float: left;
+		z-index: 30;
+		background: #0a4b80;
+		top: 150px;
+		left: 1px;
+		width: 100%;
+		height: auto;
+		box-shadow: 0 12px 15px rgba(0,0,0,0.75);
+	}
+	
+	#generalMenu ul li:hover .GeneralMenuPanel
+	{
+		display: block; 
+	}
+	
+	#generalMenu ul li .GeneralMenuPanel .PanelSeparator
+	{
+		float: left;
+		width: 100%;
+		height: 4px;
+		background: white;
+	}
+	
+	#generalMenu ul li#saMenu .GeneralMenuPanel
+	{
+		left: 41px;
+		width: 183px;
+	}
+
+	#generalMenu ul li#sfMenu .GeneralMenuPanel
+	{
+		left: 226px;
+		width: 183px;
+	}
+
+	#generalMenu ul li#sfiMenu .GeneralMenuPanel
+	{
+		left: 411px;
+		width: 183px;
+	}
+
+	#generalMenu ul li#spMenu .GeneralMenuPanel
+	{
+		left: 596px;
+		width: 183px;
+	}
+
+		
+	
+	#generalMenu ul li .GeneralMenuPanel .PanelSeparator #saPanel
+	{
+		position: absolute;
+		width: 183px;			
+		height: 4px;
+		background: #0a4b80;
+	}
+	
+	#generalMenu ul li .GeneralMenuPanel .PanelSeparator #sfPanel
+	{
+		position: absolute;
+		width: 183px;		
+		height: 4px;
+		background: #0a4b80;
+	}
+	
+	#generalMenu ul li .GeneralMenuPanel .PanelSeparator #sfiPanel
+	{
+		position: absolute;
+		width: 183px;		
+		height: 4px;
+		background: #0a4b80;
+	}
+
+	#generalMenu ul li .GeneralMenuPanel .PanelSeparator #spPanel
+	{
+		position: absolute;
+		width: 183px;		
+		height: 4px;
+		background: #0a4b80;
+	}
+	#generalMenu ul li .GeneralMenuPanel .SecondLevel li#bilEco
+	{
+		width: 100px;
+	}
+	
+	
+	#generalMenu ul li .GeneralMenuPanel .PanelSeparator #laPanel
+	{
+		position: absolute;
+		width: 280px;
+		left: 300px;
+		height: 4px;
+		background: #0a4b80;
+	}
+	
+	#generalMenu ul li .GeneralMenuPanel .SecondLevel li#attIsp
+	{
+		width: 101px;
+	}
+	#generalMenu ul li .GeneralMenuPanel .SecondLevel li#bilancio
+	{
+		width: 80px;
+	}
+	#generalMenu ul li .GeneralMenuPanel .SecondLevel li#mutui
+	{
+		width: 40px;
+	}
+	#generalMenu ul li .GeneralMenuPanel .SecondLevel li#patto
+	{
+		width: 106px;
+	}
+	#generalMenu ul li .GeneralMenuPanel .SecondLevel li#pensioni
+	{
+		width: 60px;
+	}
+	#generalMenu ul li .GeneralMenuPanel .SecondLevel li#relCassa
+	{
+		width: 117px;
+	}
+	#generalMenu ul li .GeneralMenuPanel .SecondLevel li#sanita
+	{
+		width: 120px;
+	}
+	#generalMenu ul li .GeneralMenuPanel .SecondLevel li#tesoreria
+	{
+		width: 100px;
+	}
+	
+	#generalMenu ul li#ceeMenu .GeneralMenuPanel
+	{
+		width: 128px;
+		left: 466px;
+	}
+	
+	#generalMenu ul li .GeneralMenuPanel .PanelSeparator #ceePanel
+	{
+		position: absolute;
+		width: 128px;
+		height: 4px;
+		background: #0a4b80;
+	}
+	
+	#generalMenu ul li#pdMenu .GeneralMenuPanel
+	{
+		width: 150px;
+		left: 595px;
+	}	
+
+	#generalMenu ul li .GeneralMenuPanel .PanelSeparator #pdPanel
+	{
+		position: absolute;
+		width: 127px;
+		height: 4px;
+		background: #0a4b80;
+	}
+	
+	#generalMenu ul li .GeneralMenuPanel .SecondLevel li#datiPers
+	{
+		width: 126px;
+	}
+	
+	#generalMenu ul li#uffPubMenu .GeneralMenuPanel
+	{
+		width: 100%;
+		left: 0px;
+	}
+	
+	#generalMenu ul li .GeneralMenuPanel .PanelSeparator #puPanel
+	{
+		position: absolute;
+		width: 252px;
+		height: 4px;
+		background: #0a4b80;
+	}
+	
+	#generalMenu ul li .GeneralMenuPanel .SecondLevel li#pubUff
+	{
+		width: 250px;
+	}
+	
+	
+	#generalMenu ul li .GeneralMenuPanel .SecondLevel ul
+	{	
+		float: left;
+		background: #0a4b80;
+		width: 100%;
+	}
+	
+	#generalMenu ul li .GeneralMenuPanel .SecondLevel li
+	{
+
+		text-align: left;
+		color: white;
+		font-weight: bold;
+		width: 80px;
+		padding: 10px 20px 10px 12px;
+	}
+	
+	#generalMenu ul li .GeneralMenuPanel .SecondLevel .LastSecondLevel
+	{
+		padding-right: 12px;
+	}
+	
+	#generalMenu ul li .GeneralMenuPanel .SecondLevel li .ThirdLevel
+	{
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+	
+	#generalMenu ul li .GeneralMenuPanel .SecondLevel li .ThirdLevel li
+	{
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+	
+	#generalMenu ul li .GeneralMenuPanel .SecondLevel li .ThirdLevel li a
+	{
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		height: auto;
+		border-style: none;
+		background: #0a4b80;
+		color: #00a2de;
+	}
+
+	#generalMenu ul li .GeneralMenuPanel .SecondLevel li .ThirdLevel li a:hover
+	{
+		background: #0a4b80;
+		color: #00ceff;
+	}
+	
+	#generalMenu
+	{
+		float: left;
+		width: 100%;
+		height: 32px;
+		overflow: hidden;
+		font-size: 13px;
+	}
+	#generalMenu ul
+	{
+		text-align: center;
+	}
+	#generalMenu li a
+	{
+		float: left;
+		padding: 6px 8px 4px 8px;
+		height: 22px;
+		line-height: 24px;
+		border-right: 1px solid white;
+		font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		overflow: hidden;
+	}
+	#generalMenu a:link,
+	#generalMenu a:visited
+	{
+		color: white;
+		background: #062551;
+	}
+	
+	#generalMenu a:link.bgB1,
+	#generalMenu a:visited.bgB1
+	{
+		background: #0a4b80;
+	}
+	
+	#generalMenu a:link.gmSelected
+	{
+		background: url(../img/menu-ON-shadow-style.png);
+	}
+	#generalMenu a:hover.gmSelected,
+	#generalMenu a:active.gmSelected
+	{
+		background: #0a4b80;
+	}
+	
+	#generalMenu a:hover,
+	#generalMenu a:active
+	{
+		color: white;
+		background: #0a4b80;
+	}
+	#generalMenu li a#centralAdmin
+	{
+		width: 167px;
+		border-left: 1px solid white;
+	}
+	#generalMenu li a#localAdmin
+	{
+		width: 264px;
+	}
+	#generalMenu li a#cee
+	{
+		width: 112px;
+	}
+	#generalMenu li a#personalData
+	{
+		width: 111px;
+	}
+	#generalMenu li a#ufficialPub
+	{
+		width: 244px;
+		text-align: left;
+		padding: 6px 0 4px 8px;
+	}
+
+	/*** Personal Menu ***/
+	
+	#personalMenu
+	{
+		float: left;
+		width: 100%;
+		height: 28px;
+		overflow: hidden;
+	}
+	
+	#personalMenu ul
+	{
+		float: left;
+		width: 100%;
+	}
+	
+	.PmLi
+	{
+		padding: 3px 8px 3px 12px;
+		height: 22px;
+		overflow: hidden;
+	}
+	
+	.PmLi#favouriteList
+	{
+		width: 140px;
+	}
+	.PmLi#createList
+	{
+		width: 130px;
+	}
+	.PmLi#receivedList
+	{
+		width: 140px;
+	}
+	.PmLi#appList
+	{
+		width: 110px;
+	}
+	.PmLi#notifList
+	{
+		width: 100px;
+	}
+	
+	.PmLiSmall
+	{
+		width: 116px;
+		padding: 3px 8px 3px 12px;
+		height: 22px;
+		overflow: hidden;
+	}
+	
+	.PersonalMenuA
+	{
+		font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		float: left;
+		width: 106px;
+		height: 100%;
+		line-height: 22px;
+		padding-left: 16px;
+		text-align: left;
+	}
+
+	.PersonalMenuA span
+	{
+		font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		/*font-style: italic;*/
+		position: relative;
+		top: -1px;
+	}
+	
+	.PersonalMenuA#favouriteReports
+	{
+		background: url(../img/menu-report-preferiti_mouseoff.png) 0 2px no-repeat transparent;
+	}
+	
+	.PersonalMenuA#favouriteReports:hover
+	{
+		background: url(../img/menu-report-preferiti_mouseover.png) 0 2px no-repeat transparent;
+	}
+	
+	.PersonalMenuA#createdReports
+	{
+		background: url(../img/menu-report-creati_mouseoff.png) 0 5px no-repeat transparent;
+	}
+	
+	.PersonalMenuA#createdReports:hover
+	{
+		background: url(../img/menu-report-creati_mouseover.png) 0 5px no-repeat transparent;
+	}
+		
+	.PersonalMenuA#receivedReports
+	{
+		background: url(../img/menu-report-ricevuti_mouseoff.png) 0 5px no-repeat transparent;
+	}
+	
+	.PersonalMenuA#receivedReports:hover
+	{
+		background: url(../img/menu-report-ricevuti_mouseover.png) 0 5px no-repeat transparent;
+	}
+			
+	.PersonalMenuA#applications
+	{
+		background: url(../img/menu-applicazioni_mouseoff.png) 0 5px no-repeat transparent;
+	}
+	
+	.PersonalMenuA#applications:hover
+	{
+		background: url(../img/menu-applicazioni_mouseover.png) 0 5px no-repeat transparent;
+	}
+				
+	.PersonalMenuA#notifications 
+	{
+		float: left;
+		background: url(../img/menu-notifiche_mouseoff.png) 0 5px no-repeat transparent;
+		width: 70px;
+	}
+	
+	.PersonalMenuA#notifications span
+	{
+		float:left;
+		width: 50px;
+		line-height: 24px;
+		font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		text-align: left;
+	}
+	
+	.PersonalMenuA#notifications span.NotImg
+	{
+		top: 4px;
+		font-size: 10px;
+		color: #fff;
+		background: url(../img/notification-number-icon.png) 1px 0 no-repeat transparent;
+		float: right;
+		width: 16px;
+		height: 16px;
+		text-align: center;
+		line-height: 15px;
+	}
+	
+	.PersonalMenuA#notifications:hover
+	{
+		background: url(../img/menu-notifiche_mouseover.png) 0 5px no-repeat transparent;
+	}
+				
+	.PersonalMenuA#newReport
+	{
+		background: url(../img/crea-report_mouseoff.png) 0 5px no-repeat transparent;
+	}
+	
+	.PersonalMenuA#newReport:hover
+	{
+		background: url(../img/crea-report_mouseover.png) 0 5px no-repeat transparent;
+	}
+	
+	#personalMenu li#searchList
+	{
+		width: 94px;
+		padding: 3px 12px;
+		text-align: right;
+	}
+
+	.PersonalMenuA#searchReport
+	{
+		background: url(../img/cerca-report_mouseoff.png) 0 5px no-repeat transparent;
+	}
+	
+	.PersonalMenuA#searchReport:hover
+	{
+		background: url(../img/cerca-report_mouseover.png) 0 5px no-repeat transparent;
+	}
+		
+	.PersonalMenuPanel
+	{
+		display: none;
+		position: absolute;
+		float: left;
+		z-index: 40;
+		top: 90px;
+		height: auto;
+		width: auto;
+		font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+		font-size: 12px;
+	}
+	
+	.PersonalMenuPanel .pmTitleWrap
+	{
+		position: absolute;
+		float: left;
+		z-index: 40;
+		height: 27px;
+		border-top: 1px solid #aaaaaa;
+		border-left: 1px solid #aaaaaa;
+		border-right: 1px solid #aaaaaa;
+		border-bottom: 1px solid white;
+	}
+	
+	.PersonalMenuPanel .pmListWrap
+	{
+		position: absolute;
+		float: left;
+		z-index: 30;
+		top: 28px;
+		height: auto;
+		width: auto;
+		background: white;
+		border: 1px solid #aaaaaa;
+		box-shadow: 0 12px 15px rgba(0,0,0,0.75);
+		padding: 24px 0 10px 0;
+	}
+	
+	.PersonalMenuPanel .pmListWrap li
+	{
+		/*height: 12px;*/
+		height: 24px;
+	}
+	
+	.PersonalMenuPanel .pmListWrap li input
+	{
+		float: left;
+	}
+	
+	.PersonalMenuPanel .pmListWrap span
+	{
+		margin-left: 11px;
+	}
+	
+	.PersonalMenuPanel .pmListWrap .ReportList
+	{
+		padding-bottom: 2px;
+		border-bottom: 1px solid #6cabd0;
+	}
+	
+	.PersonalMenuPanel .pmListWrap .ButtonArea
+	{
+		float: left;
+		padding: 10px 0 0 10px;
+	}
+	
+	.PersonalMenuPanel .pmListWrap .ButtonArea span
+	{
+		margin: 0;
+	}
+	
+	#personalMenu ul li .PersonalMenuPanel .pmListWrap form ul li .ReportListItemTitle
+	{
+		float: left;
+		padding: 6px 20px 6px 11px;
+	}
+	
+	#personalMenu ul li .PersonalMenuPanel .pmListWrap form ul li .ReportToggable
+	{
+		padding: 0 10px 12px 11px;
+		background: white;
+	}
+	
+	/*#personalMenu ul li:hover .PersonalMenuPanel*/
+	#personalMenu ul li.selected .PersonalMenuPanel
+	{
+		display: block; 
+	}
+	
+	#personalMenu ul li#favouriteList .PersonalMenuPanel 
+	{
+		left: 5px;
+	}
+	#personalMenu ul li#favouriteList .PersonalMenuPanel .pmTitleWrap
+	{
+		width: 134px;
+	}
+	#personalMenu ul li#favouriteList .PersonalMenuPanel .pmListWrap
+	{
+		width: 520px;
+	}
+	#personalMenu ul li#favouriteList .PersonalMenuPanel .pmListWrap  ul li .ReportListItemTitle
+	{
+		width: 489px;
+		float: left;
+		padding: 6px 20px 6px 11px;
+	}
+	#personalMenu ul li#favouriteList .PersonalMenuPanel .pmListWrap  ul li .ReportToggable
+	{
+		width: 499px;	
+		padding: 0 10px 12px 11px;
+		background: white;		
+	}
+	
+	#personalMenu ul li#createList .PersonalMenuPanel 
+	{
+		left: 161px;
+	}
+	#personalMenu ul li#createList .PersonalMenuPanel .pmTitleWrap
+	{
+		width: 126px;
+	}
+	#personalMenu ul li#createList .PersonalMenuPanel .pmListWrap
+	{
+		width: 581px;
+	}	
+	#personalMenu ul li#createList .PersonalMenuPanel .pmListWrap form ul li .ReportListItemTitle
+	{
+		width: 550px;
+	}
+	#personalMenu ul li#createList .PersonalMenuPanel .pmListWrap form ul li .ReportToggable
+	{
+		width: 560px;		
+	}
+	
+	#personalMenu ul li#receivedList .PersonalMenuPanel 
+	{
+		left: 312px;
+	}
+	#personalMenu ul li#receivedList .PersonalMenuPanel .pmTitleWrap
+	{
+		width: 138px;
+	}
+	#personalMenu ul li#receivedList .PersonalMenuPanel .pmListWrap
+	{
+		width: 660px;
+	}
+	#personalMenu ul li#receivedList .PersonalMenuPanel .pmListWrap form ul li .ReportListItemTitle
+	{
+		width: 629px;
+	}
+	#personalMenu ul li#receivedList .PersonalMenuPanel .pmListWrap form ul li .ReportToggable
+	{
+		width: 639px;		
+	}
+	
+	#personalMenu ul li#appList .PersonalMenuPanel 
+	{
+		left: 473px;
+	}
+	#personalMenu ul li#appList .PersonalMenuPanel .pmTitleWrap
+	{
+		width: 100px;
+	}
+	#personalMenu ul li#appList .PersonalMenuPanel .pmListWrap
+	{
+		width: 130px;
+	}
+	#personalMenu ul li#appList .PersonalMenuPanel .pmListWrap ul li
+	{
+		width: 99px;
+		padding: 6px 20px 6px 11px;
+		height: 12px;
+	}
+	
+	#personalMenu ul li#notifList .PersonalMenuPanel 
+	{
+		left: 601px;
+	}
+	#personalMenu ul li#notifList .PersonalMenuPanel .pmTitleWrap
+	{
+		width: 105px;
+	}
+	#personalMenu ul li#notifList .PersonalMenuPanel .pmListWrap
+	{
+		left: -207px;
+		width: 580px;
+	}
+	#personalMenu ul li#notifList .PersonalMenuPanel .pmListWrap ul li
+	{
+		width: 549px;
+		padding: 6px 20px 6px 11px;
+		height: 12px;
+	}
+
+	
+	/************************************************************************/
+	/*** Page layout ***/
+	/************************************************************************/
+	.Page
+	{
+		float:left;
+		width: 100%;
+		height: auto;
+		margin: 0 0 0 0;
+		 
+	}
+	
+	.Page .Left
+	{
+		float:left;
+		width: 207px;
+		margin-left: -190px;
+		min-height: 450px;
+		padding: 10px 6px 0 16px;
+	}
+	
+	.Page .Content
+	{
+		float:left;
+		width: 110%;		
+		padding: 0 40px 0 10px;
+		margin: 10px -200px 10px 0px;
+		min-height: 430px;
+		/*border-bottom: 1px solid #6cabd0;*/
+	}
+	
+	.Page .Right
+	{
+		float:left;
+		width: 231px;
+		min-height: 528px;
+		padding: 21px 12px 0 12px;
+	}
+
+	/************************************************************************/
+	/*** Footer ***/
+	/************************************************************************/
+	.footerWrap
+	{
+		float: left;
+		width: 100%;
+		height: 24px;
+		padding: 2px 0;
+		overflow: hidden;
+		
+		text-align: center;
+		
+		background: #062551;
+		border-top: 1px solid rgb(10, 24, 58);
+	}
+	
+	footer
+	{
+		width: 976px;
+		margin: 0 auto;
+		
+	}
+	
+	footer nav
+	{
+		float: center;
+		height: 100%;
+		margin: 4px 0 0 251px;
+		display: inline;
+	}
+	
+
+	footer nav a, footer nav span
+	{
+		color: #fff;
+		font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		line-height: 16px;
+		float: left;
+	}
+	
+	footer nav a
+	{
+		padding: 0px 6px;
+	}
+	
+	footer nav a, footer nav a:active, 
+	footer nav a:visited, footer nav a:link
+	{
+		text-decoration: none;
+	}
+	
+	footer nav a:hover
+	{
+		color: #f0f7fb;
+	}
+	
+	/************************************************************************/
+	/*** Background ***/
+	/************************************************************************/
+
+	#menuBg
+	{
+		position: absolute;
+		height: 32px;
+		width: 100%;
+		top: 118px;
+		left: 0;
+		z-index: 10;
+	}
+	
+	
+	#footerBg
+	{
+		position: absolute;
+		height: 20px;
+		width: 100%;
+		left: 0;
+		z-index: 10;
+	}
+	
+	/*** Content(central panel) ***/
+
+	/************************************************************************/
+	/*** Homepage ***/
+	/************************************************************************/
+	
+.Page .Content
+{
+	font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+	padding-top: 21px;
+	border-bottom: 1px solid #6cabd0;
+}
+
+.Page .Content h3
+{
+	float: left;
+	width: 100%;
+	font-size: 16px;
+	margin: 0;
+}
+
+.Page .Content h2
+{
+	float: left;
+	width: 100%;
+	font-size: 19px;
+	font-weight: bold;
+	background: url(../img/report-prompt_mouseoff.png) 0 8px no-repeat transparent;
+	padding-left: 16px;
+	margin: 5px 0;
+}
+
+.Page .Content .Link a
+{
+	
+	background: url(../img/report-prompt_mouseoff.png) 0 2px no-repeat transparent;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.Page .Content .Link a:hover
+{
+	color: #00a2de;
+	background: url(../img/report-prompt_mouseover.png) 0 2px no-repeat transparent;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+}
+
+.TextArea
+{
+	float: left;
+	font-family: Georgia;
+	font-size: 18px;
+	width: 380px;
+	margin-bottom: 8px;
+}
+
+.ContentImage
+{
+	float: left;
+	border: 1px solid #6cabd0;
+	width: 100%;
+	margin: 2px 0 24px 0;
+}
+
+.Details
+{
+	float: left;
+	width: 100%;
+}
+
+.Details p
+{
+	float: left;
+	width: 100%;
+	font-size: 11px;
+}
+
+.Details .Dl
+{
+	font-size: 10px;
+}
+
+.Details .Dd,
+.Details .Dt
+{
+	font-size: 11px;
+}
+
+/*** Left panel ***/
+
+.Page .Left
+{
+	font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+	/*padding-top: 21px;*/
+	/*border-bottom: 1px solid #ffd6ab;*/
+	position: relative;
+}
+
+.bottomOrangeBorder
+{
+	float: left;
+	height: 1px;
+	width: 210px;
+	position: relative;
+	bottom: -1px;
+	left: 0px;
+	border-bottom: 1px solid #FFD6AB;
+}
+
+.Page .Left h3
+{
+	background: url(../img/sfondo-testata-ultimi-report-utilizzati.png) 4px 2px no-repeat transparent;
+	margin: 0 0 12px 0;
+	padding-left: 10px;
+	line-height: 23px;
+	position: relative;
+	margin-left: -12px;
+}
+
+.Page .Right
+{
+	font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+}
+
+.Page .Right h3
+{
+	margin: 0 0 12px 0;
+}
+
+.Page .Left h3 span
+{
+	font-size: 12px;
+	font-weight: bold;
+	background: url(../img/utente-loggato_mouseoff.png) 4px 2px no-repeat transparent;
+	padding-left: 16px;
+	position: relative;
+}
+
+.Page .Right h3 span
+{
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.Report
+{
+	float: left;
+	width: 100%;
+	padding-bottom: 6px;
+}
+
+.ReportTitle
+{
+	font-size: 12px;
+	font-weight: bold;
+	width: 210px;
+}
+
+.Page .Right .ReportTitle
+{
+	width: 16px;
+}
+
+.ReportTitle a
+{
+	background: url(../img/report-prompt_mouseoff.png) 0 2px no-repeat transparent;
+	padding-left: 14px;
+}
+.ReportTitle a:hover
+{
+	color: #00a2de;
+	background: url(../img/report-prompt_mouseover.png) 0 2px no-repeat transparent;
+	padding-left: 14px;
+}
+
+.ReportDescription
+{
+	float: left;
+	font-size: 11px;
+	font-family: Georgia;
+	margin: 6px 0;
+	width: 100%;
+	line-height: 14px;
+}
+
+.Footnote{
+	float: left;
+	font-size: 10px;
+	width: 100%;
+}
+
+.Line
+{
+	float: left;
+	width: 100%;
+	margin: 6px 0;
+}
+
+.Line span
+{
+	float: left;
+	height: 1px;
+	width: 44px;
+	border-bottom: 1px solid #aaaaaa;
+}
+
+.Dots
+{
+	float: left;
+	height: 1px;
+	width: 100%;
+	margin: 6px 0 0 0;
+	border-bottom: 1px dotted #aaaaaa;
+}
+
+.ReportToggable
+{
+	display: none;
+	float: left;
+	width: 100%;
+}
+
+.News
+{
+	float: left;
+	font-size: 16px;
+	width: 100%;
+	border-top: 1px solid #6cabd0;
+}
+
+.NewsTitle
+{
+	margin: 0;
+	font-weight: bold;
+	width: 200px;
+	float: left;
+	padding: 6px 0 3px 0;
+}
+
+.NewsMenu
+{
+	float: right;
+	width: 30px;
+	padding: 6px 0;
+}
+
+.Previous
+{
+	float: left;
+	background: url(../img/arrow-left_mouseoff.png) 0 10px no-repeat transparent;
+	/*visibility: hidden;*/
+}
+.Previous:hover
+{
+	background: url(../img/arrow-left_mouseover.png) 0 10px no-repeat transparent;
+}
+
+.Next
+{
+	float: left;
+	margin-left: 4px;
+	background: url(../img/arrow-right_mouseoff.png) 0 10px no-repeat transparent;
+}
+.Next:hover
+{
+	background: url(../img/arrow-right_mouseover.png) 0 10px no-repeat transparent;
+}
+
+.NewsBox
+{
+	float: left;
+	font-size: 12px;
+	display: none;
+	padding-top: 3px;
+}
+
+.NewsBox img
+{
+	float: left;
+	width: 80%;
+	padding-bottom: 6px;
+	max-height: 85px;
+}
+
+.NewsBox p
+{
+	float: left;
+}
+
+.NewsBox p a:hover
+{
+	color: #00a2de;
+}
+
+.NewsDate
+{
+	font-size: 10px;
+}
+
+/******** Select Box *********/
+
+/* Dropdown control */
+.selectBox-dropdown {
+	min-width: 150px;
+	position: relative;
+	border: solid 1px #BBB;
+	/*line-height: 1.5;*/
+	text-decoration: none;
+	text-align: left;
+	color: #666666;
+	outline: none;
+	vertical-align: middle;
+	background: #F2F2F2;
+	/*background: -moz-linear-gradient(top, #F8F8F8 1%, #E1E1E1 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #F8F8F8), color-stop(100%, #E1E1E1));
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F8F8F8', endColorstr='#E1E1E1', GradientType=0);*/
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .75);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .75);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, .75);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	display: inline-block;
+	cursor: default;
+}
+
+.selectBox-dropdown:focus,
+.selectBox-dropdown:focus .selectBox-arrow {
+	border-color: #666;
+}
+
+.selectBox-dropdown.selectBox-menuShowing {
+	-moz-border-radius-bottomleft: 0;
+	-moz-border-radius-bottomright: 0;
+	-webkit-border-bottom-left-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.selectBox-dropdown .selectBox-label {
+	padding: 2px 8px;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.selectBox-dropdown .selectBox-arrow {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 23px;
+	height: 100%;
+	background: url(../img/jquery.selectBox-arrow.gif) 50% center no-repeat;
+	border-left: solid 1px #BBB;
+}
+
+
+/* Dropdown menu */
+.selectBox-dropdown-menu {
+	position: absolute;
+	z-index: 99999;
+	max-height: 200px;
+	min-height: 1em;
+	border: solid 1px #BBB; /* should be the same border width as .selectBox-dropdown */
+	background: #FFF;
+	-moz-box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+	-webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+	box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+	overflow: auto;
+}
+
+
+/* Inline control */
+.selectBox-inline {
+	min-width: 150px;
+	outline: none;
+	border: solid 1px #BBB;
+	background: #FFF;
+	display: inline-block;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	overflow: auto;
+}
+
+.selectBox-inline:focus {
+	border-color: #666;
+}
+
+
+/* Options */
+.selectBox-options,
+.selectBox-options LI,
+.selectBox-options LI A {
+	list-style: none;
+	display: block;
+	cursor: default;
+	padding: 0;
+	margin: 0;
+}
+
+.selectBox-options LI A {
+	line-height: 1.5;
+	padding: 0 .5em;
+	white-space: nowrap;
+	overflow: hidden;
+	background: 6px center no-repeat;
+}
+
+.selectBox-options LI.selectBox-hover A {
+	background-color: #EEE;
+}
+
+.selectBox-options LI.selectBox-disabled A {
+	color: #888;
+	background-color: transparent;
+}
+
+.selectBox-options LI.selectBox-selected A {
+	background-color: #C8DEF4;
+}
+
+.selectBox-options .selectBox-optgroup {
+	color: #666;
+	background: #EEE;
+	font-weight: bold;
+	line-height: 1.5;
+	padding: 0 .3em;
+	white-space: nowrap;
+}
+
+
+/* Disabled state */
+.selectBox.selectBox-disabled {
+	color: #888 !important;
+}
+
+.selectBox-dropdown.selectBox-disabled .selectBox-arrow {
+	opacity: .5;
+	filter: alpha(opacity=50);
+	border-color: #666;
+}
+
+.selectBox-inline.selectBox-disabled {
+	color: #888 !important;
+}
+
+.selectBox-inline.selectBox-disabled .selectBox-options A {
+	background-color: transparent !important;
+}
+
+
+/* CUSTOM */
+.selectBox-dropdown.finsa
+{
+	height: 22px;
+	width: 100%;
+	border-color: 0px;
+	background: none transparent;
+	-moz-box-shadow: 0 0 3px #888 inset;
+	-webkit-box-shadow: 0 0 3px#888 inset;
+	box-shadow: 0 0 3px #888 inset;
+}
+
+.selectBox-dropdown.finsa .selectBox-arrow
+{
+	border-left: 0px;
+	background: url(../img/arrow-drop-down-menu.png) 8px 10px no-repeat transparent;
+}
+
+.selectBox-dropdown.finsa .selectBox-label
+{
+	font-size: 12px;
+	font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+
+.selectBox-options li a
+{
+	font-size: 12px;
+	font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+
+/********* Popup ****************/
+
+.PopupWrapper
+{
+	float: left;
+	background: white;
+	width: 474px;
+	height: auto;
+	font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+	margin: 18px;
+	display: none;
+}
+
+.PopupWrapper h2
+{
+	float: left;
+	width: 458px;
+	padding-left: 16px;
+	margin: 0;
+	background: url(../img/crea-report_mouseoff.png) 0 5px no-repeat transparent;
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: 1px solid #aaaaaa;
+}
+
+.PopupWrapper h3
+{
+	float: left;
+	width: 100%;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 8px 0;
+	margin: 0;
+}
+
+.PopupWrapper .PopupBox p
+{
+	font-size: 12px;
+}
+
+.PopupWrapper .PopupBox .ReportTypeSelect{
+	float: left;
+	width: 322px;
+	font-size: 12px;
+	padding: 1px;
+	margin: 2px 0 2px 16px;
+}
+
+.PopupWrapper .PopupBox
+{
+	float: left;
+	padding: 6px 0;
+	width: 100%;
+}
+
+.PopupWrapper .PopupBox a,
+.PopupWrapper .PopupBox a:hover
+{
+	text-decoration: none;
+	color: #0099ff;
+}
+
+.PopupWrapper .PopupBox .ReportList
+{
+	float: left;
+	width: 458px;
+	padding:  0;
+	border-bottom: 1px solid #6cabd0;
+	margin: 0 0 0 16px;
+}
+
+.PopupWrapper .PopupBox .ReportList li .ReportListItemTitle
+{
+	float: left;
+	padding: 6px 0 6px 10px;
+	width: 100%;
+	height: 12px;
+}
+
+.PopupWrapper .PopupBox .ReportList .ReportToggable
+{
+	background: white;
+	padding: 0 0 24px 26px;
+	width: 440px;
+	border-bottom: 1px solid #cde3ef;
+	position: relative;
+}
+
+.PopupWrapper .PopupBox .ReportList .ReportToggable .ReportDescription
+{
+	float: left;
+	width: 75%;
+	padding-right: 4px;
+}
+
+.PopupWrapper .PopupBox .ReportList .ReportToggable .SideInfo
+{
+	float: right;
+	width: 20%;
+}
+
+.PopupWrapper .PopupBox .ReportList .ReportToggable .SideInfo .SideButton
+{
+	position: absolute;
+	bottom: 90px;
+}
+
+.PopupWrapper .PopupBox  .NavPages
+{
+	float: right;
+	width: auto;
+	font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+}
+
+/* Overlay */
+#simplemodal-overlay
+{
+	background-color:#000; 
+	cursor:wait;
+}
+
+/* Container */
+#simplemodal-container
+{	
+	height:auto !important; 
+	width:514px; 
+	background-color: white; 
+	border: 1px solid #aaaaaa; 
+	padding: 0;
+	-moz-border-radius: 6px; /* Firefox */
+	-webkit-border-radius: 6px; /* Safari, Chrome */
+	border-radius: 6px; /* CSS3 */
+	box-shadow: 0 8px 20px rgba(0,0,0,0.75);
+}
+
+#simplemodal-wrap
+{
+	height: auto;
+}
+
+#simplemodal-container a.modalCloseImg {
+	background:url(../img/close-popup.png) no-repeat; /* adjust url as required */
+	width:8px;
+	height:8px;
+	display:inline;
+	z-index:3200;
+	position:absolute;
+	top: 21px;
+	right: 22px;
+	cursor:pointer;
+}
+
+/* RELATED REPORTS POPUP */
+#relRepWrap
+{
+	float: left;
+	width: 231px;
+	height: 384px;
+	background: url(../img/report-correlati-popup-up.png) -15px 0 no-repeat transparent;
+	padding: 32px 38px 32px 38px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 1000;
+	display: none;
+}
+
+#relRepOverlay
+{
+	float: left;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 900;
+	display: none;
+	/*background: #000;
+	opacity: 0.7;*/
+}
+
+#relRepWrap.down
+{
+	background: url(../img/report-correlati-popup-down.png) -15px -9px no-repeat transparent;
+}
+
+#relRepWrap h4
+{
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 19px;
+	width: 100%;
+	height: 20px;
+	overflow: hidden;
+}
+
+#relRepWrap h4 span
+{
+	font-size: 14px;
+}
+
+#relRepWrap .newsSlider
+{
+	float: left;
+	width: 100%;
+	padding: 14px 0 0;
+	height: 310px;
+	overflow: hidden;
+}
+
+#relRepWrap .newsSlider .slide,
+#relRepWrap .newsSlider .news
+{
+	float: left;
+	width: 100%;
+}
+
+#relRepWrap .newsSlider .news
+{
+	height: 102px;
+	overflow: hidden;
+}
+
+#relRepWrap h5.title
+{
+	float: left;
+	width: 219px;
+	overflow: hidden;
+	padding: 6px;
+	margin: 0px;
+}
+
+#relRepWrap p.text
+{
+	float: left;
+	font-size: 11px;
+	font-family: Georgia;
+	padding: 6px;
+	width: 219px;
+	line-height: 14px;
+}
+
+#relRepWrap .pager
+{
+	float: left;
+	width: 100%;
+	height: 16px;
+	overflow: hidden;
+	border-top: 1px solid #6CABD0;
+	margin-top: 1px;
+	text-align: center;
+	padding: 6px 0;
+}
+
+#relRepWrap .pager span
+{
+	padding: 6px;
+}
+
+#relRepWrap .pager a
+{
+	padding: 6px;
+	cursor: pointer;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
